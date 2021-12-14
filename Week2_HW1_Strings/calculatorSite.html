@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Online Calculator</h1>
+    <form>
+        <label>Number</label>
+        <input type="number">
+        <label for="number">Number</label>
+        <input type="number">
+        <button>Calculate</button>
+    </form>
+    <script>
+        // let prompt = require('prompt-sync')()
+        let input = prompt('Please select a valid option, ie, 1,2,3,4,5... \n 1. add \n 2.Subract \n 3. Multiply \n4. Divide \n 5. Exit \n choice: ')
+        console.log();
+        let num1 = prompt("Enter the first number")
+        let num2 = prompt('enter the second number')
+        let choice = input
+        switch (input) {
+            case '1':  
+                    add(num1,num2);//call add function to do calculation inside function.no console.log
+                break;
+            case '2':
+                subtract(num1,num2);
+                break;
+            case '3':
+                multiply(num1,num2);
+                break;
+            case '4':
+                divide(num1,num2);
+                break;  
+            case '5':
+                alert("exiting... ");
+                break;
+            default:
+                alert("your entry is invalid, try again later");
+        }
+
+        function add(a,b){
+            output = a+b
+            alert('the answer is : ' + output);
+        }
+        function subtract(a,b){
+            output = a-b
+            alert('the answer is : ' + output);
+        }
+        function multiply(a,b){
+            outptut = a*b
+            alert('the answer is : ' + output);
+        }
+        function dvide(a,b){
+            output = a/b
+            alert('the answer is : ' + output);
+        }
+    </script>
+    
+</body>
+</html>
