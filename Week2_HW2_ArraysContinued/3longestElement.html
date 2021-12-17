@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>use the console</p>
+    <script>
+
+//find the longest string
+//i got it to find the length but dont know how to display the word
+let sentence = "the apple doesnt fall far from the tree"
+console.log("in the following sentence...");
+console.log(sentence);
+let arr = sentence.split(' ')
+let winner = ''
+// console.log(winner + "at the begining");
+
+ for (let i=0;i<arr.length;i++){
+     let word= arr[i]
+    //  console.log(word);
+     if (word.length >winner.length){
+         winner = arr[i]
+        }
+    }
+console.log(winner+ " is the longest word");
+
+    </script>
+</body>
+</html>
